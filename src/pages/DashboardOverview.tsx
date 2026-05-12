@@ -15,6 +15,7 @@ import {
   IconAlertCircle, IconTool, IconRefresh, IconCheck,
   IconPlus, IconPencil, IconTrash, IconClipboardList,
   IconUsers, IconUser, IconPackage, IconCurrencyEuro,
+  IconChevronRight, IconClipboardCheck,
 } from '@tabler/icons-react';
 
 const APPGROUP_ID = '6a034763d16ad085f0f94ba0';
@@ -127,6 +128,30 @@ export default function DashboardOverview() {
 
   return (
     <div className="space-y-6">
+      {/* Workflow Intent Cards */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <a href="#/intents/auftrag-anlegen" className="bg-card border border-border border-l-4 border-l-primary rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow flex items-center gap-3 min-w-0 overflow-hidden">
+          <div className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+            <IconPlus size={18} className="text-primary" stroke={2} />
+          </div>
+          <div className="flex-1 min-w-0">
+            <p className="text-sm font-semibold truncate">Neuen Auftrag anlegen</p>
+            <p className="text-xs text-muted-foreground truncate">Kunde, Mitarbeiter & Material in einem Schritt zuweisen</p>
+          </div>
+          <IconChevronRight size={16} className="text-muted-foreground shrink-0" stroke={2} />
+        </a>
+        <a href="#/intents/auftrag-abschliessen" className="bg-card border border-border border-l-4 border-l-primary rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow flex items-center gap-3 min-w-0 overflow-hidden">
+          <div className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+            <IconClipboardCheck size={18} className="text-primary" stroke={2} />
+          </div>
+          <div className="flex-1 min-w-0">
+            <p className="text-sm font-semibold truncate">Auftrag abschließen & abrechnen</p>
+            <p className="text-xs text-muted-foreground truncate">Stunden erfassen, Status setzen und Auftrag abrechnen</p>
+          </div>
+          <IconChevronRight size={16} className="text-muted-foreground shrink-0" stroke={2} />
+        </a>
+      </div>
+
       {/* KPI Stats */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
         <StatCard
