@@ -1,0 +1,7 @@
+- Kunden (kunden): vorname[string/text], nachname[string/text], strasse[string/text], hausnummer[string/text], plz[string/text], ort[string/text], telefon[string/tel], email[string/email], notizen_kunde[string/textarea]
+- Material (material): bezeichnung[string/text], einheit[lookup/select], preis_pro_einheit[number], notizen_material[string/textarea]
+- Mitarbeiter (mitarbeiter): mitarbeiter_vorname[string/text], mitarbeiter_nachname[string/text], gewerk[lookup/select], stundensatz[number], telefon_mitarbeiter[string/tel], email_mitarbeiter[string/email]
+- Aufträge (auftraege): auftragsnummer[string/text], auftragsdatum[date/date], status[lookup/select], beschreibung[string/textarea], kunde[applookup/select], mitarbeiter_auftrag[applookup/select], arbeitsstunden[number], material_auftrag[applookup/select], materialmenge[number], anfahrtspauschale[number], zusatzkosten[number], notizen_auftrag[string/textarea]
+  → kunde links to app_id 6a0347345783ff1e978f88b1
+  → mitarbeiter_auftrag links to app_id 6a03473a078bdcd9440ee803
+  → material_auftrag links to app_id 6a03473a600e28365a6638ef

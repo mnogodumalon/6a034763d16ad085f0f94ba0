@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "forms": [
+    {
+      "entity": "kunden",
+      "app_id": "6a0347345783ff1e978f88b1",
+      "path": "/rest/apps/6a0347345783ff1e978f88b1/records",
+      "allowed_fields": [
+        "vorname",
+        "nachname",
+        "strasse",
+        "hausnummer",
+        "plz",
+        "ort",
+        "telefon",
+        "email",
+        "notizen_kunde"
+      ],
+      "pow": true,
+      "pow_difficulty": 50000,
+      "title": "Kunden — Formular"
+    },
+    {
+      "entity": "material",
+      "app_id": "6a03473a600e28365a6638ef",
+      "path": "/rest/apps/6a03473a600e28365a6638ef/records",
+      "allowed_fields": [
+        "bezeichnung",
+        "einheit",
+        "preis_pro_einheit",
+        "notizen_material"
+      ],
+      "pow": true,
+      "pow_difficulty": 50000,
+      "title": "Material — Formular"
+    },
+    {
+      "entity": "mitarbeiter",
+      "app_id": "6a03473a078bdcd9440ee803",
+      "path": "/rest/apps/6a03473a078bdcd9440ee803/records",
+      "allowed_fields": [
+        "mitarbeiter_vorname",
+        "mitarbeiter_nachname",
+        "gewerk",
+        "stundensatz",
+        "telefon_mitarbeiter",
+        "email_mitarbeiter"
+      ],
+      "pow": true,
+      "pow_difficulty": 50000,
+      "title": "Mitarbeiter — Formular"
+    },
+    {
+      "entity": "auftraege",
+      "app_id": "6a03473b1f67aeb35089c81c",
+      "path": "/rest/apps/6a03473b1f67aeb35089c81c/records",
+      "allowed_fields": [
+        "auftragsnummer",
+        "auftragsdatum",
+        "status",
+        "beschreibung",
+        "arbeitsstunden",
+        "materialmenge",
+        "anfahrtspauschale",
+        "zusatzkosten",
+        "notizen_auftrag"
+      ],
+      "pow": true,
+      "pow_difficulty": 50000,
+      "title": "Aufträge — Formular"
+    }
+  ]
+}
